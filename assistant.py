@@ -13,3 +13,20 @@ def talkToMe(audio):
     #"speaks audio passed as argument"
     print(audio)
     speak.Speak(audio)
+
+def myCommand():
+    #"listens for commands"
+
+    r = sr.Recognizer()
+
+    with sr.Microphone() as source:
+        speak_command = 'Please give some command to me...'
+        talkToMe(speak_command)
+        
+        r.pause_threshold = 1
+        r.adjust_for_ambient_noise(source, duration=1)
+        audio = r.listen(source)
+
+    try:
+        command = r.recognize_google(audio).lower()
+        talkToMe('You said: ' + command + '\n')
