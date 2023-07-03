@@ -43,3 +43,14 @@ def myCommand():
 def assistant(command):
     #"if statements for executing commands"
     message = 'Ask me to do something, I am not here for chitchat ! I can understand commands like send email, open gmail, open website xyz.com and tell me a joke'
+    if 'hello' in command:
+        talkToMe(message)
+
+    elif 'hi' in command:
+        talkToMe(message)
+
+    elif 'hey' in command:
+        talkToMe(message)
+    
+    elif 'austine' in command:
+        talkToMe(message)
