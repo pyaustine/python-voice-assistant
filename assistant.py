@@ -54,3 +54,9 @@ def assistant(command):
     
     elif 'austine' in command:
         talkToMe(message)
+
+    elif 'open gmail' in command:
+        #reg_ex = re.search('open gmail (.*)', command)
+        url = 'https://www.gmail.com/'
+        webbrowser.open(url)
+        talkToMe('Done!')
