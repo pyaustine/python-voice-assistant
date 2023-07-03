@@ -38,3 +38,8 @@ def myCommand():
         command = myCommand()
 
     return command
+
+
+def assistant(command):
+    #"if statements for executing commands"
+    message = 'Ask me to do something, I am not here for chitchat ! I can understand commands like send email, open gmail, open website xyz.com and tell me a joke'
