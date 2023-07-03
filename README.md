@@ -8,7 +8,6 @@ If you are a linux user install the say command using;
 sudo apt-get install gnustep-gui-runtime
 ```
 ```
-pip2 install -r requirements.txt
 pip3 install -r requirements.txt
 ```
 
