@@ -78,4 +78,6 @@ def assistant(command):
         os.system('notepad')
         talkToMe('Done for you!')
     
-    # 
+    # what's up
+    elif 'whats up' in command:
+        talkToMe('Just doing my thing')
