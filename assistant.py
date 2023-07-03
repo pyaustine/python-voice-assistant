@@ -61,7 +61,7 @@ def assistant(command):
         url = 'https://www.gmail.com/'
         webbrowser.open(url)
         talkToMe('Done!')
-        
+
     # other websites
     elif 'open website' in command:
         reg_ex = re.search('open website (.+)', command)
@@ -72,3 +72,10 @@ def assistant(command):
             talkToMe('Done!')
         else:
             pass
+    
+    # note pad
+    elif 'open notepad' in command:
+        os.system('notepad')
+        talkToMe('Done for you!')
+    
+    # 
