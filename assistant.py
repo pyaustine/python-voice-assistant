@@ -81,3 +81,17 @@ def assistant(command):
     # what's up
     elif 'whats up' in command:
         talkToMe('Just doing my thing')
+
+    # tell a joke
+    elif 'tell me a joke' in command:
+        # fetch from API
+        res = requests.get(
+                'https://icanhazdadjoke.com/',
+                headers={"Accept":"application/json"}
+                )
+        # validate https request
+        if res.status_code == requests.codes.ok:
+            talkToMe('Here is an awesome joke for you- ')
+            talkToMe(str(res.json()['joke']))
+        else:
+            talkToMe('oops!I ran out of jokes')
