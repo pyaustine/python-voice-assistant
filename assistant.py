@@ -148,3 +148,6 @@ def assistant(command):
 
          # init gmail SMTP
             mail=smtplib.SMTP('smtp.gmail.com', 587)
+
+        # identify to server
+            mail.ehlo()
