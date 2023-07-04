@@ -166,3 +166,8 @@ def assistant(command):
 
             # end message
             talkToMe('Email sent.')
+
+        # if fail to provide a valid receiver
+        else:
+            talkToMe(
+                'Buddy I am not sending email ! you failed to provide me a receiver name')
