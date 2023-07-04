@@ -128,7 +128,14 @@ def assistant(command):
 
 
     # send mail function
-    lif 'send email' in command:
+    elif 'send email' in command:
             talkToMe('Who is the recipient?')
             recipient=myCommand()
             receiver=False
+
+        # specify pre-saved recipient
+         if 'john' in recipient:
+            receiver="receiversemail"
+        # if not John, specify by fetching from the user
+        else:
+            talkToMe('I am not able to fetch receiver name buddy! ')
