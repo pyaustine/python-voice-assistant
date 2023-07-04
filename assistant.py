@@ -125,3 +125,10 @@ def assistant(command):
             for i in range(0, 3):
                 talkToMe('On %s will it %s. The maximum temperture will be %.1f degree.'
                          'The lowest temperature will be %.1f degrees.' % (forecasts[i].date(), forecasts[i]. text(), (int(forecasts[i].high())-32)/1.8, (int(forecasts[i].low())-32)/1.8
+
+
+    # send mail function
+    lif 'send email' in command:
+            talkToMe('Who is the recipient?')
+            recipient=myCommand()
+            receiver=False
