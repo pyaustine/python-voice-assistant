@@ -112,3 +112,16 @@ def assistant(command):
                 city, condition.text(), (int(condition.temp())-32)/1.8))
         else:
             talkToMe("City name not fetched")
+
+    # weather forecast
+    # this option is not funtioning as proxy need to set to bypass HMCL IT settings
+    elif 'weather forecast in' in command:
+        reg_ex = re. search('weather forecast in (.+)', command)
+        if reg_ex:
+            city = reg_ex. group(1)
+            weather = Weather()
+            location = weather. lookup_by_location(city)
+            forecasts = location. forecast()
+            for i in range(0, 3):
+                talkToMe('On %s will it %s. The maximum temperture will be %.1f degree.'
+                         'The lowest temperature will be %.1f degrees.' % (forecasts[i].date(), forecasts[i]. text(), (int(forecasts[i].high())-32)/1.8, (int(forecasts[i].low())-32)/1.8
