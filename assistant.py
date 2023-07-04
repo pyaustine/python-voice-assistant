@@ -163,3 +163,6 @@ def assistant(command):
 
             # end mail connection
             mail.close()
+
+            # end message
+            talkToMe('Email sent.')
