@@ -157,3 +157,6 @@ def assistant(command):
 
             # login
             mail.login('youremail.com', 'password')
+
+            # send message
+            mail.sendmail('Testing Desktop assistant', receiver, content)
