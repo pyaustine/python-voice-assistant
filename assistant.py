@@ -184,3 +184,7 @@ def assistant(command):
 
 # computer identity
 talkToMe('Hey, I am your computer and I am ready for your command !')
+
+# loop to continue executing multiple commands
+while True:
+    assistant(myCommand())
