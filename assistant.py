@@ -1,3 +1,9 @@
+"""
+Program: Desktop Assistant
+Author: ayahaustine@gmail.com || github.com/sphinx-austin
+"""
+
+
 from gtts import gTTS
 import speech_recognition as sr
 import os
