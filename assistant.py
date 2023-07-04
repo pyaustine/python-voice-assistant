@@ -136,6 +136,12 @@ def assistant(command):
         # specify pre-saved recipient
          if 'john' in recipient:
             receiver="receiversemail"
-        # if not John, specify by fetching from the user
+        # if not John, tell the user
         else:
             talkToMe('I am not able to fetch receiver name buddy! ')
+
+        # continue if recipeint is valid
+        if receiver:
+
+            talkToMe('What should I say?')
+            content=myCommand()
