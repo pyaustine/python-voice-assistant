@@ -145,3 +145,6 @@ def assistant(command):
 
             talkToMe('What should I say?')
             content=myCommand()
+
+         # init gmail SMTP
+            mail=smtplib.SMTP('smtp.gmail.com', 587)
