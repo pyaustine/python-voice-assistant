@@ -181,3 +181,6 @@ def assistant(command):
     #  you can provide more use cases
     else:
             talkToMe('I don\'t know what you mean! I can understand commands like send email, open gmail, open website xyz.com and tell me a joke')
+
+# computer identity
+talkToMe('Hey, I am your computer and I am ready for your command !')
