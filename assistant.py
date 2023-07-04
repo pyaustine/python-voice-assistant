@@ -173,6 +173,11 @@ def assistant(command):
                 'Buddy I am not sending email ! you failed to provide me a receiver name')
 
     # done
-     elif 'bye' in command:
+    elif 'bye' in command:
         talkToMe('See you later Take care !')
         exit()
+
+    # if user provide wrong instructions
+    #  you can provide more use cases
+    else:
+            talkToMe('I don\'t know what you mean! I can understand commands like send email, open gmail, open website xyz.com and tell me a joke')
