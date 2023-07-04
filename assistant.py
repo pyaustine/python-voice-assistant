@@ -160,3 +160,6 @@ def assistant(command):
 
             # send message
             mail.sendmail('Testing Desktop assistant', receiver, content)
+
+            # end mail connection
+            mail.close()
