@@ -146,8 +146,14 @@ def assistant(command):
             talkToMe('What should I say?')
             content=myCommand()
 
-         # init gmail SMTP
+            # init gmail SMTP
             mail=smtplib.SMTP('smtp.gmail.com', 587)
 
-        # identify to server
+            # identify to server
             mail.ehlo()
+
+            # encrypt session
+            mail.starttls()
+
+            # login
+            mail.login('youremail.com', 'password')
